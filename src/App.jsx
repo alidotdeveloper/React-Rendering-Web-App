@@ -11,16 +11,8 @@ const [Contacts, setContacts] = useState({
    
 
   const {name,value} = e.target;
-  setContacts((preValue) => {
-    
-    return{
-    ...preValue,
-    [name]: value
-    }
-    
-
-  }) 
-  
+  setContacts(preValue => ({ ...preValue, [name]: value })
+  )
   }
   
   return (
